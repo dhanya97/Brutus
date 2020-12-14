@@ -20,7 +20,7 @@ class pause: # Counts API failures for timeout
     p = 0
 
 def privateKey(): # Generates random 256 bit private key in hex format
-    return binascii.hexlify(os.urandom(32)).decode('utf-8')
+    return binascii.hexlify(os.urandom(8)).decode('utf-8')
 
 def publicKey(privatekey): # Private Key -> Public Key
     privatekey = binascii.unhexlify(privatekey)
